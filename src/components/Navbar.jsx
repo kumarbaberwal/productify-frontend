@@ -1,4 +1,4 @@
-import { SignIn, SignInButton, SignUpButton, useAuth, UserProfile } from "@clerk/clerk-react"
+import { SignIn, SignInButton, SignUpButton, useAuth, UserButton, UserProfile } from "@clerk/clerk-react"
 import { PlusIcon, ShoppingBagIcon, UserIcon } from "lucide-react";
 import React from 'react'
 import { Link } from "react-router";
@@ -31,7 +31,7 @@ export default function Navbar() {
                 <UserIcon className="size-4" />
                 <span className="hidden sm:inline">Profile</span>
               </Link>
-              {/* <UserProfile /> */}
+              <UserButton />
             </>
           ) : (
             <>
